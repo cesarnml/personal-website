@@ -1,43 +1,87 @@
-# Astro Starter Kit: Minimal
+# Astro + Tailwind + ESLint + Prettier Starter
+
+This repository is a reusable Astro starter template for quickly bootstrapping new projects with a clean frontend baseline.
+
+## Included
+
+- Astro
+- Tailwind CSS v4 via `@tailwindcss/vite`
+- Prettier with `prettier-plugin-astro`
+- ESLint with `eslint-plugin-astro`
+- Astro accessibility lint rules
+- A minimal shared `BaseLayout`
+- Bun-based scripts and lockfile
+
+## Current Structure
+
+This starter is intentionally lightweight. It includes:
+
+- a minimal Astro page in `src/pages/`
+- a reusable layout in `src/layouts/BaseLayout.astro`
+- global Tailwind styles in `src/styles/global.css`
+- formatting and linting config for Astro files
+
+It does not yet include:
+
+- component libraries
+- CMS integration
+- authentication
+- testing frameworks
+- deployment configuration
+
+## Scripts
+
+Install dependencies:
 
 ```sh
-bun create astro@latest -- --template minimal
+bun install
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Start the local development server:
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+```sh
+bun run dev
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Build the site:
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+```sh
+bun run build
+```
 
-Any static assets, like images, can be placed in the `public/` directory.
+Preview the production build locally:
 
-## 🧞 Commands
+```sh
+bun run preview
+```
 
-All commands are run from the root of the project, from a terminal:
+Run ESLint:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `bun install`             | Installs dependencies                            |
-| `bun dev`             | Starts local dev server at `localhost:4321`      |
-| `bun build`           | Build your production site to `./dist/`          |
-| `bun preview`         | Preview your build locally, before deploying     |
-| `bun astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `bun astro -- --help` | Get help using the Astro CLI                     |
+```sh
+bun run lint
+```
 
-## 👀 Want to learn more?
+Check formatting:
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+```sh
+bun run prettier:check
+```
+
+Format files:
+
+```sh
+bun run prettier:format
+```
+
+## Conventions
+
+- Use Conventional Commit syntax for commit messages.
+- Keep shared document markup in `BaseLayout`.
+- Keep formatter and linting configuration close to Astro defaults unless there is a clear project need.
+- Use Bun for dependency management and scripts in this starter.
+
+Examples:
+
+- `feat: add blog post card component`
+- `fix: correct layout metadata handling`
+- `docs: update starter README`
