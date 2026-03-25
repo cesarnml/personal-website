@@ -4,5 +4,6 @@
     "contrastBorder": "#FF1EFF",
     "focusBorder": "#00FF87",
     "notebook.cellBorderColor": "#C600C6"
-  }
+  },
+  "cSpell.words": ["portabletext"]
 }
