@@ -3,8 +3,35 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout
-  title="Astro + Sanity Learning Blog"
-  description="A tutorial project for learning Sanity as a headless CMS with Astro."
+  title="Cesar's Personal Website"
+  description="A personal website in progress, with Sanity Studio powering the current editing workflow."
 >
-  <h1 class="font-mono text-red-500">Astro</h1>
+  <main class="flex min-h-screen items-center justify-center px-6 py-16">
+    <section class="w-full max-w-2xl space-y-6 text-center">
+      <p class="text-xs font-semibold uppercase tracking-[0.3em] text-neutral-500">
+        Personal Website
+      </p>
+
+      <h1 class="text-4xl font-semibold tracking-tight text-neutral-950 sm:text-5xl">
+        The site is taking shape.
+      </h1>
+
+      <p class="mx-auto max-w-xl text-base leading-7 text-neutral-600 sm:text-lg">
+        This space is being built out as the foundation for my personal website.
+        For now, Sanity Studio is the place where the structure, content, and
+        publishing workflow are coming together.
+      </p>
+
+      <div class="pt-2">
+        <a
+          href="/studio"
+          target="_blank"
+          rel="noreferrer"
+          class="inline-flex items-center justify-center rounded-full bg-neutral-950 px-6 py-3 text-sm font-medium text-white transition hover:bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-neutral-950 focus:ring-offset-2"
+        >
+          Open Studio
+        </a>
+      </div>
+    </section>
+  </main>
 </BaseLayout>
