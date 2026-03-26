@@ -15,9 +15,7 @@
     "lint": "eslint .",
     "prettier:check": "prettier . --check",
     "prettier:format": "prettier . --write",
-    "verify": "bun run check && bun run lint && bun run prettier:check && bun run build",
-    "wt:create": "codex-worktree create",
-    "wt:remove": "codex-worktree remove"
+    "verify": "bun run check && bun run lint && bun run prettier:check && bun run build"
   },
   "dependencies": {
     "@astrojs/react": "^5.0.1",
