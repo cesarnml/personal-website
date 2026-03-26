@@ -168,3 +168,4 @@ vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
 .vercel
+.vscode/settings.json

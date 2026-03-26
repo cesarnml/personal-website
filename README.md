@@ -55,12 +55,6 @@ Build the site:
 bun run build
 ```
 
-Preview the production build locally:
-
-```sh
-bun run preview
-```
-
 Run ESLint:
 
 ```sh
